@@ -22,23 +22,31 @@ body{
            
 }
 .nav--header{
-    height:4rem;
-    width: 100%;
-    box-shadow:  0 2px 4px grey ;
-    border-bottom: 1px solid black;
-    padding-left: 60%;
-    font-family: Ubuntu ,'sanserif';
+    height:3.5rem;
+   box-shadow: 3px 2px 4px -1.5px;
+    border-bottom: 1px solid ;
+    padding-left: 50%;
+    font-family: 'montserrati',sans-serif;
+    font-size: 1.5rem;
+
   
 }
 a{
     text-decoration: none;
+    color:rgb(53, 13, 183);
+    
+}
+a:hover{
+    color: magenta;
+}
+a:visited{
+    color: indigo;
 }
 ul{
     display: flex;
     flex-direction: row;
     align-items: center;
-   padding-top:1rem;
-  
+ 
 }
 li{
  padding-right: 0;
