@@ -6,8 +6,15 @@ const soundClips = document.querySelector('.sound-clips');
 const canvas = document.querySelector('.visualizer');
 const mainSection = document.querySelector('.main-controls');
 
+function myFunction() {
+const  x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 // disable stop button while not recording
-
 stop.disabled = true;
 
 // visualiser setup - create web audio api context and canvas

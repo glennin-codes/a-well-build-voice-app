@@ -7,36 +7,46 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-
+<link rel="stylesheet" href="navbar.css".css">
 
   </head>
   <body>
-
-    <div class="wrapper">
-
-      <header>
-        <h1>voice recorder app</h1>
+    <header class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
       </header>
-
-      <section class="main-controls">
-        <canvas class="visualizer" height="60px"></canvas>
-        <div id="buttons">
-          <i class="record fa fa-microphone"></i>
-         <i class=" stop fa fa-stop-circle" aria-hidden="true"></i>
-          
-        </div>
-      </section>
-
-      <section class="sound-clips">
-
-
-      </section>
-
-    </div>
-
-    
-    <input type="checkbox" id="toggle">
-    
+    <div class="wrapper">
+      
+            <nav class="title">
+                <h1>voice recorder app</h1>
+              </nav>
+        
+              <section class="main-controls">
+                <canvas class="visualizer" height="60px"></canvas>
+                <div id="buttons">
+                  <i class="record fa fa-microphone"></i>
+                 <i class=" stop fa fa-stop-circle" aria-hidden="true"></i>
+                  
+                </div>
+              </section>
+        
+              <section class="sound-clips">
+        
+        
+              </section>
+        
+            </div>
+        
+            
+            <input type="checkbox" id="toggle">
+            
+          </main>
+     
     <script src="app.js"></script>
 
   </body>
