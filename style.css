@@ -17,9 +17,8 @@ h1 {
   }
 
 .wrapper{
- 
-  position: relative;
   top: 45%;
+  position: relative;
   justify-content: center;
   align-items: center;  
   display: flex;
@@ -157,7 +156,6 @@ label {
   }
   @media screen and (max-width: 600px) {
    .title{
-     margin-left: 5rem;
      display: flex;
      flex-direction: row;
      padding-left: 20px;
