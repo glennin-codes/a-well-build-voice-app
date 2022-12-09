@@ -1,8 +1,147 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: lightcyan;
+    background-color: white;
     color: #414142;
     position: relative;
     font-family: monospace;
+    width: 100%;
+    height: 100vh;
 }
+h1, h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: normal;
+    padding: 0.5rem 0 0 0;
+  }
+
+.main-controls {
+    
+    /* view port height*/
+    /*targeting Chrome & Safari*/
+    display: -webkit-flex;
+    /*targeting IE10*/
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*horizontal centering*/
+    align-items: center;
+}
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+i{
+    margin-bottom: 30px;
+    font-weight: 800;
+   opacity:1;
+   cursor: pointer;
+   font-size: 50px;
+   margin-right: 2rem;
+   transition: all 0.2s;
+   
+}
+ .record{
+    color: #435f7a;
+   
+}
+.record:hover {
+    color: blue;
+    transition: all 0.5s;
+}
+.stop{
+    color: #33cc33;
+    opacity: 0.7;
+}
+.stop:hover {
+    color: #27a527;
+    opacity: 1;
+}
+canvas{
+    width: 900px;
+    height: 60px;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+label {
+    font-size: 3rem;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+    z-index: 5;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+  }
+  
+  input[type=checkbox] {
+     position: absolute;
+     top: -100px;
+  }
+  
+
+  
+  aside p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  aside a {
+    color: #666;
+  }
+  
+  /* Toggled State of information box */
+  input[type=checkbox]:checked ~ aside {
+    transform: translateX(0);
+  }
+  
+  /* Cursor when clip name is clicked over */
+  
+  .clip p {
+    cursor: pointer;
+  }
+  .sound-clips {
+    flex: 1;
+    overflow: auto;
+  }
+  
+  section, article {
+    display: block;
+  }
+  
+  .clip {
+    padding-bottom: 1rem;
+  }
+  
+  audio {
+    width: 100%;
+    display: block;
+    margin: 1rem auto 0.5rem;
+    
+  }
+  
+  .clip p {
+    display: inline-block;
+    font-size: 1rem;
+  }
+  
+  .clip button {
+    font-size: 1rem;
+    float: right;
+  }
+  
+  /* Adjustments for wider screens */
+  @media all and (min-width: 800px) {
+    /* Don't take all the space as readability is lost when line length
+       goes past a certain size */
+    .wrapper {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+  }
